@@ -1,26 +1,28 @@
+import org.junit.Test;
+
 public class CalculatorTest {
-    public static void main(String[] args) {
-        Calculator calculator = new Calculator();
 
-        add(calculator);
-        subtract(calculator);
-        muliply(calculator);
-        divide(calculator);
+    @Test
+    public void add() {
+        Calculator cal = new Calculator();
+        System.out.println(cal.add(6,3));
     }
 
-    public static void add(Calculator cal) {
-        System.out.println(cal.add(3,9));
+    @Test
+    public void subtract() {
+        Calculator cal = new Calculator();
+        System.out.println(cal.subtract(6,3));
     }
 
-    public static void subtract(Calculator cal) {
-        System.out.println(cal.subtract(3,9));
+    @Test
+    public void devide() {
+        Calculator cal = new Calculator();
+        System.out.println(cal.divide(6,3));
     }
 
-    public static void muliply(Calculator cal) {
-        System.out.println(cal.multiply(3,9));
-    }
-
-    public static void divide(Calculator cal) {
-        System.out.println(cal.divide(3,9));
+    @Test
+    public void multiply() {
+        Calculator cal = new Calculator();
+        System.out.println(cal.multiply(6,3));
     }
 }
