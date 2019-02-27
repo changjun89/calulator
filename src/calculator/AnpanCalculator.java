@@ -1,4 +1,4 @@
-package pactice1;
+package calculator;
 
 public class AnpanCalculator {
 
@@ -54,6 +54,5 @@ public class AnpanCalculator {
     public String getSubStringResult(String arg, int idx) {
         return arg.substring(idx + 1, arg.length());
     }
-
 
 }
